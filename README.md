@@ -9,8 +9,8 @@ written by Doug Adams
 dougadams@mac.com (http://dougscripts.com/itunes/scripts/ss.php?sp=deleteneverplayed)
 
 Instructions for use:
-                1) Put script into iTunes Scripts folder: ~/Library/iTunes/Scripts
-                2) Set theP to the playlist you want to delete files from, in my case its a smart playlist whose files are greater than 5 days old
-                3) Designed to be run out of cron.  eg:
-                        $ crontab -l
-                        30 3 * * * osascript ~/Library/iTunes/Scripts/purge-playlist-files.applescript
+1. Put script into iTunes Scripts folder: ~/Library/iTunes/Scripts
+2. Set theP to the playlist you want to delete files from, in my case its a smart playlist whose files are greater than 5 days old
+3. Designed to be run out of cron.  eg:
+	$ crontab -l
+	30 3 * * * osascript ~/Library/iTunes/Scripts/purge-playlist-files.applescript
