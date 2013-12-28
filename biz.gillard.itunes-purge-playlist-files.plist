@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>biz.gillard.itunes-purge-playlist-files</string>
+	<key>EnableGlobbing</key>
+	<true/>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/bin/osascript</string>
+		<string>~/Library/iTunes/Scripts/purge-playlist-files.applescript</string>
+	</array>
+	<key>StandardErrorPath</key>
+	<string>~/Library/Logs/purge-playlist-files-stderr.log</string>
+	<key>StandardOutPath</key>
+	<string>~/Library/Logs/purge-playlist-files-stdout.log</string>
+	<key>StartCalendarInterval</key>
+	<dict>
+		<key>Hour</key>
+		<integer>12</integer>
+		<key>Minute</key>
+		<integer>06</integer>
+	</dict>
+</dict>
+</plist>
